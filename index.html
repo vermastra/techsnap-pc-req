@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PC Requirements</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      color: #b9345a;
+      box-sizing: border-box;
+      font-family: "urw-din", sans-serif;
+    }
+
+    body {
+      background-color: #292929;
+    }
+
+    nav {
+      background-color: #222221;
+    }
+
+    .nav-link {
+      font-size: 1.2rem;
+    }
+
+    header {
+      color: white;
+      padding-left: 20px;
+      line-height: 60px;
+      margin-top: 18px;
+      font-size: 55px;
+    }
+
+    .author {
+      font-size: 15px;
+      color: white;
+      margin-top: 5px;
+      margin-bottom: 18px;
+      padding-left: 20px;
+    }
+
+    .minSpecifications {
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      flex-direction: column;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .minSpecifications p {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 17px;
+    }
+
+    td {
+      vertical-align: top;
+      /* color: #989898; */
+      color: rgb(190 190 194);
+      padding: 2px;
+      font-size: 13pt;
+    }
+
+    table {
+      border-collapse: separate;
+      border-spacing: 2px 9px;
+    }
+
+    #firstData {
+      font-weight: 500;
+      font-size: 13pt;
+      font-family: sofia-pro, sans-serif;
+      color: white;
+    }
+
+    p {
+
+      text-align: justify;
+      /* color: #989898; */
+      color: rgb(190 190 194);
+      font-size: 17px;
+      letter-spacing: .015rem;
+      line-height: 1.67;
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+
+    .heading {
+      color: white;
+      font-weight: 500;
+      font-size: 13pt;
+    }
+
+    span {
+
+      /* color: #989898; */
+      color: rgb(190 190 194);
+      font-weight: normal;
+      font-size: 13pt;
+
+    }
+
+    fieldset p {
+      padding-bottom: 7px;
+    }
+
+    .bestSystem {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    .contact {
+      margin-top: 20px;
+      padding-bottom: 20px;
+      font-size: 13pt;
+      font-weight: 700;
+      padding-left: 20px;
+      padding-top: 10px;
+      color: white;
+      background-color: #222221;
+      border-top: 1px solid #dedede;
+
+    }
+
+    .socialMedia {
+      display: flex;
+      flex-wrap: wrap;
+      font-weight: normal;
+      font-size: 11pt;
+      color: white;
+    }
+
+    .socialMedia a {
+      width: 249px;
+      font-weight: 500;
+    }
+
+    fieldset {
+      border-width: 2px;
+      border-style: double;
+      border-color: rgb(55, 65, 81);
+      border-radius: .5rem;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+
+    legend {
+      font-size: 1.3em;
+      font-weight: 500;
+      float: none;
+      width: auto;
+      color: #26a5ff;
+
+    }
+
+    h2 {
+      font-size: 22pt;
+      font-weight: 500;
+      margin-bottom: .5rem;
+      padding-bottom: .7rem;
+      color: #b9345a;
+
+    }
+
+    h3 {
+      font-size: 2.3rem;
+      font-weight: 500;
+      color: white;
+
+    }
+
+    h1 {
+      padding: 5px;
+      font-size: 1.8em;
+      color: #26a5ff;
+      background-color: rgb(29, 30, 31);
+      font-weight: 500;
+    }
+
+
+
+    .pad {
+      padding: 1.5rem;
+      padding-bottom: 0px;
+      width: 100%;
+    }
+
+    .mainBody {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    .mainSection {
+      background-color: #131417;
+      width: 65%;
+      margin-right: 25px;
+      margin-left: 40px;
+      margin-top: 40px;
+      padding-bottom: 20px;
+      border-radius: 16px;
+    }
+
+    .addSection {
+      width: 35%;
+      margin-top: 40px;
+      margin-right: 13px;
+    }
+
+    hr {
+      margin: 0px;
+    }
+
+    .addHeading {
+      font-size: 16pt;
+      font-weight: 300;
+      letter-spacing: .2rem;
+      color: white;
+    }
+
+    .add {
+      height: 100px;
+      margin-top: 25px;
+      position:static;
+
+    }
+
+    #add1 {
+      background-color: rgb(31, 30, 30);
+    }
+
+    #add2 {
+      background-color: rgb(80, 79, 79);
+    }
+
+    #add3 {
+      background-color: rgb(139, 138, 138);
+    }
+
+    #add4 {
+      height: 300px;
+      background-color: rgb(238, 236, 236);
+      position: sticky;
+      top: 0;
+    }
+    @media only screen and (min-width:1024px){
+      .pad {
+        width: 50%;
+      }
+    }
+    @media only screen and (max-width:768px) {
+     
+
+      .author {
+        font-size: 13px;
+      }
+
+      .mainBody {
+        flex-direction: column;
+        margin-top: 5px;
+      }
+
+      .mainSection {
+        width: auto;
+        margin: 30px;
+      }
+
+      .addSection {
+        width: auto;
+        margin-top: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
+
+      }
+
+      header {
+        font-size: 48px;
+      }
+
+      .minSpecifications p {
+        font-size: 13pt;
+      }
+
+      p {
+        font-size: 14pt;
+        letter-spacing: .01rem;
+      }
+
+
+    }
+
+    @media only screen and (max-width:577px) {
+      .mainSection {
+        width: auto;
+
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+      }
+
+      p {
+        font-size: 13pt;
+      }
+
+      .addSection {
+        margin: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class=" container-fluid navbar navbar-expand-lg navbar-dark ">
+    <div class="container ">
+      <!-- <div style="display: flex; flex-direction: row;">
+        <img style="width: 30px; height: 30px;margin-top: 5px;margin-right: 8px;"
+          src="data:image/jpeg;base64,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"
+          alt=""> -->
+      <a style="font-size: 25px;" class="navbar-brand" href="#">TechSnap</a>
+      <!-- </div> -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Programming</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">IDE</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mainBody">
+    <div class="mainSection">
+
+      <header>PC Requirements</header>
+      <div class="author">Author : Aditya Verma &nbsp Last Updated : 30 July, 2021</div>
+      <hr style="color: white;">
+      <div class="minSpecifications">
+        <p>Beginners are required to have a laptop computer that meets the following minimum specifications,</p>
+        <div class="programming">
+          <h1>For Programming :</h1>
+          <table>
+            <tr>
+              <td id="firstData">Processor</td>
+              <td>:&nbsp</td>
+              <td>Intel core i5 or better processor, 7th generation or newer(Virtualization must be supported)</td>
+            </tr>
+
+            <tr>
+              <td id="firstData">Operating System</td>
+              <td>:</td>
+              <td>Windows 10</td>
+            </tr>
+
+            <tr>
+              <td id="firstData">Screen resolution</td>
+              <td>:</td>
+              <td>1920*1080</td>
+            </tr>
+
+            <tr>
+              <td id="firstData">Storage</td>
+              <td>:</td>
+              <td>minimum 500GB SSD is required, since SSD is faster than HDD</td>
+            </tr>
+
+            <tr>
+              <td id="firstData">RAM</td>
+              <td>:</td>
+              <td>minumum of 8GB and must be Expandable</td>
+            </tr>
+
+            <tr>
+              <td id="firstData">Webcam</td>
+              <td>:</td>
+              <td>required</td>
+            </tr>
+
+            <tr>
+              <td id="firstData">graphic card</td>
+              <td>:</td>
+              <td>minimum 2GB integrated</td>
+            </tr>
+
+            <tr>
+              <td id="firstData">Internet</td>
+              <td>:</td>
+              <td>high speed</td>
+            </tr>
+          </table>
+        </div>
+        <br>
+
+        <div class="gaming">
+          <h1>For Gaming : </h1>
+          <table>
+            <tr>
+              <td id="firstData">Processor</td>
+              <td>:&nbsp</td>
+              <td>Intel core i7-4770K procesor</td>
+            </tr>
+            <tr>
+              <td id="firstData">Operating system</td>
+              <td>:</td>
+              <td>Windows 10(64-bit)</td>
+            </tr>
+            <tr>
+              <td id="firstData">Screen resolution</td>
+              <td>:</td>
+              <td>1920*1080</td>
+            </tr>
+            <tr>
+              <td id="firstData">Storage</td>
+              <td>:</td>
+              <td>2-3TB HDD, 1IB SSD</td>
+            </tr>
+            <tr>
+              <td id="firstData">RAM</td>
+              <td>:</td>
+              <td>16GB is best</td>
+            </tr>
+            <tr>
+              <td id="firstData">Webcam</td>
+              <td>:</td>
+              <td>required</td>
+            </tr>
+            <tr>
+              <td id="firstData">Graphic card</td>
+              <td>:</td>
+              <td>NVDIA GeForce GTX 1070</td>
+            </tr>
+            <tr>
+              <td id="firstData">Internet</td>
+              <td>:</td>
+              <td>high speed</td>
+            </tr>
+          </table>
+        </div>
+
+        <p>Windows 10 is basic requirement as some applications will not be supported by lower verions.
+          <br>
+          The above given resolution is not mandatory but it is better to detect tiny errors,
+          inorder to make it more precise and to make our job easier. Whereas for gaming, it is highly
+          recommended to have better gaming experience.
+          <br>
+          Programming and Gaming requires a lot of memory because our programs use up every
+          last available megabyte while compiling. When we go for bigger projects, running programs may gets
+          slower and also to implement the codes. Most probably the gaming experience gets interrupted.
+          Therefore, we need to have larger RAM's.
+          <br>
+          You may wonder the need of webcam for programming right? Well, when we go for deep learning and Artificial
+          intelligence
+          technologies, absolutely we need a webcam to detect our face or things. Nowadays it is usual that having
+          interviews,
+          meetings perhaps everything online so, there comes usage of webcam.
+          <br>
+          A graphic card is an expansion card for your PC that is responsible for rendering images to the display.
+          High-end GPU's are used for gaming, ray tracing, graphics production, and even mining cryptocurrency.
+          Hence, having a good specified graphic card is higly functional for gaming purpose.
+          <br>
+          High speed internet is very important for today's way of living. Nevertheless, what the application we are
+          using will definitely needs high speed internet. However programming may not require internet but for
+          documentation
+          and syntax reference, we need internet. High speed internet help with gaming in general, but they’re not the
+          be-all, end-all.
+          In fact, the routes that your game data takes from your PC to the game server and back are often more
+          important
+          than your connection speed.
+        </p>
+      </div>
+
+      <fieldset>
+        <legend>NOTE</legend>
+        <p>
+          The above given are mere requirements for anybody to get started with programming and gaming.
+          You can have requirements with higher specifications than mentioned above for better experience.
+        </p>
+      </fieldset>
+      <br>
+
+      <div class="bestSystem">
+        <h3>Best systems:</h3>
+        <br>
+        <h1 class="programming">For Programming :</h1>
+      </div>
+
+      <section style="background-color: #131417;margin-bottom: 1.5rem;"
+        class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+        <div style="padding-top: 1rem; padding-bottom: 1rem;" class="container">
+          <div class="flex flex-wrap -m-4">
+            <!-- ******************************************************************* -->
+            <div class="pad xl:w-1/4 md:w-1/2 w-full">
+              <div class="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden">
+                <h2 class="   border-b border-gray-800 leading-none">Apple</h2>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Model : <span>Apple Mac Book Air (M1, 2020)</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">CPU : <span>Apple M1 (8-core)</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading items-center">Graphics : <span>Integrated 7-core GPU</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">RAM : <span>8GB – 16GB</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Screen : <span>13.3-inch,2560 x 1600 Retina True Tone display (backlit LED,
+                      IPS)</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Storage : <span>256GB – 2TB SSD</span></span>
+                </p>
+              </div>
+            </div>
+            <!-- ************************************************************************************* -->
+            <div class="pad xl:w-1/4 md:w-1/2 w-full">
+              <div class="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden">
+                <h2 class="   border-b border-gray-800 leading-none"> Dell</h2>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Model : <span>Dell XPS 15</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">CPU : <span>10th-gen, Intel Core i5–i7</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading items-center">Graphics : <span>Nvidia GeForce GTX 1650 Ti</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">RAM : <span>8GB-64GB</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Screen : <span>15.6" FHD+(1920 x 1200) IPS-UHD+(3840 x 2400)</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Storage : <span>256GB – 1TB SSD</span></span>
+                </p>
+              </div>
+            </div>
+            <!-- ************************************************************************************* -->
+            <div class="pad xl:w-1/4 md:w-1/2 w-full">
+              <div class="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden">
+                <h2 class="   border-b border-gray-800 leading-none"> Lenovo </h2>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Model : <span>Lenovo ThinkPad P1 (Gen 2)</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">CPU : <span>Six Core Intel Core i7 / Xeon</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading items-center">Graphics : <span>Nvidia Quadro T1000-T2000</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">RAM : <span> 8GB - 64GB</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Screen : <span>36.2x24.6x17mm</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Storage : <span>256GB-4TB</span></span>
+                </p>
+              </div>
+            </div>
+            <!-- ************************************************************************************* -->
+            <div class="pad xl:w-1/4 md:w-1/2 w-full">
+              <div class="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden">
+                <h2 class="   border-b border-gray-800 leading-none">LG </h2>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Model : <span>LG Gram 17</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">CPU : <span>10th-generation Intel Core i7</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading items-center">Graphics : <span>Nvidia GeForce RTX 3000 Series</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">RAM : <span>Upto 64GB</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Screen : <span>381x261x17.78mm</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Storage : <span> 1TB SSD</span></span>
+                </p>
+              </div>
+            </div>
+            <!-- ************************************************************************************* -->
+            <div class="pad xl:w-1/4 md:w-1/2 w-full">
+              <div class="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden">
+                <h2 class="   border-b border-gray-800 leading-none"> Huawei</h2>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Model : <span>Huawei Mate Book 13</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">CPU : <span>8th generation Intel Core i5 – i7</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading items-center">Graphics : <span>Intel UHD Graphics 620, Nvidia GeForce MX150 2GB
+                      GDDR5</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">RAM : <span>8GB</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Screen : <span>21.1x28.6x1.2cm</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Storage : <span>256GB - 512GB SSD</span></span>
+                </p>
+              </div>
+            </div>
+            <!-- ************************************************************************************* -->
+            <div class="pad xl:w-1/4 md:w-1/2 w-full">
+              <div class="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden">
+                <h2 class="   border-b border-gray-800 leading-none">Microsoft </h2>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Model : <span>Microsoft Surface Laptop 4</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">CPU : <span>11th-gen Intel Core i5 – i7 /AMD Ryzen 5 - 7</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading items-center">Graphics : <span>Intel Iris Xe / AMD Radeon</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">RAM : <span>8GB-32GB</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Screen : <span>13.5-inch PixelSense (2,256 x 1,504) touch</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Storage : <span>256GB – 1TB SSD</span></span>
+                </p>
+              </div>
+            </div>
+            <!-- ************************************************************************************* -->
+            <div class="pad xl:w-1/4 md:w-1/2 w-full">
+              <div class="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden">
+                <h2 class="   border-b border-gray-800 leading-none">HP </h2>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Model : <span>HP Envy 13</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">CPU : <span>8th generation Intel Core i5-i7</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading items-center">Graphics : <span>Intel UHD Graphics 620,Nvidia GeForce MX150 2GB
+                      GDDR5</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">RAM : <span>8GB-16GB</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Screen : <span>Full HD (1,920 x 1,080)</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Storage : <span>256-512GB SSD</span></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <h1 class="gaming bestSystem">For Gaming :</h1>
+      <section style="background-color: #131417;margin-bottom: 1.5rem;"
+        class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+        <div style="padding-top: 1rem; padding-bottom: 1rem;" class="container ">
+          <div class="flex flex-wrap -m-4">
+            <!-- ************************************************************************************* -->
+            <div style="padding-bottom: 0px;" class="pad xl:w-1/4 md:w-1/2 w-full">
+              <div class="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden">
+                <h2 class="   border-b border-gray-800 leading-none">Dell </h2>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Model : <span>Dell G3 15</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">CPU : <span>Intel Core i7 -9750H</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading items-center">GPU : <span>Nvidia GTX 1650 Ti Max-Q</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">RAM : <span>16GB</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Screen : <span>17.3 inches, 1080p</span></span>
+                </p>
+              </div>
+            </div>
+            <!-- ************************************************************************************* -->
+            <div class="pad xl:w-1/4 md:w-1/2 w-full">
+              <div class="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden">
+                <h2 class="  border-b border-gray-800 leading-none">Alienware </h2>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Model : <span>Alienware m17 R4</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">CPU : <span>Intel Core i9-10980HK</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading items-center">GPU : <span>Nvidia RTX 3080</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">RAM : <span>32GB</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Screen : <span>17.3 inches,1080p</span></span>
+                </p>
+              </div>
+            </div>
+            <!-- ************************************************************************************* -->
+            <div class="pad xl:w-1/4 md:w-1/2 w-full">
+              <div class="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden">
+                <h2 class="   border-b border-gray-800 leading-none">Lenovo </h2>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Model : <span>Lenovo Legion 5 Pro</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">CPU : <span>Intel core i7-9750H</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading items-center">GPU : <span>Nvidia GTX 1660 Ti</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">RAM : <span>16GB</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Screen : <span>15.6 inches, 1080p</span></span>
+                </p>
+              </div>
+            </div>
+            <!-- ************************************************************************************* -->
+            <div class="pad xl:w-1/4 md:w-1/2 w-full">
+              <div class="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden">
+                <h2 class="  border-b border-gray-800 leading-none">Asus </h2>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Model : <span>Asus ROG Zephyrus M16</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">CPU : <span>Intel core i9-11900H</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading items-center">GPU : <span>Nvidia GeForce RTX 3060</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">RAM : <span>16GB</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Screen : <span>16-inch,1600p</span></span>
+                </p>
+              </div>
+            </div>
+            <!-- ************************************************************************************* -->
+            <div class="pad xl:w-1/4 md:w-1/2 w-full">
+              <div class="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden">
+                <h2 class="  border-b border-gray-800 leading-none">Acer </h2>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Model : <span>Acer Predator Triton 500</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">CPU : <span>Intel Core i7-8750H</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading items-center">GPU : <span>Nvidia RTX 2060/2080</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">RAM : <span>16/32GB</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Screen : <span>15.6 inch 1080p</span></span>
+                </p>
+              </div>
+            </div>
+            <!-- ************************************************************************************* -->
+            <div class="pad xl:w-1/4 md:w-1/2 w-full">
+              <div class="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden">
+                <h2 class="   border-b border-gray-800 leading-none">HP </h2>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Model : <span>HP Omen 15-dh0137TX</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">CPU : <span>9th generation i7-9750H</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading items-center">GPU : <span>6GB NVIDIA RTX 2060</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">RAM : <span>16GB</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Screen : <span>15.6-inch</span></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <fieldset>
+        <legend>NOTE</legend>
+        <p>
+          All kind of laptops are supported for programming, there’s nothing special in these. But these specifications
+          are
+          good and worthful for programming.
+          Whereas, for gaming it's better to consider some high specified devices which are also known as Gaming
+          laptops.
+          If you find anything has left, let us know by contacting us below.
+        </p>
+      </fieldset>
+    </div>
+
+    <div class="addSection">
+      <div class="addHeading">WHAT'S NEW</div>
+      <div class="add" id="add1"></div>
+      <div class="add" id="add2"></div>
+      <div class="add" id="add3"></div>
+      <div class="add" id="add4"></div>
+    </div>
+
+  </div>
+
+  <div class="contact">Contact us :
+    <div class="socialMedia">
+      <a href="#">Twitter</a>
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Github</a>
+      <a href="#">Dribbble</a>
+      <a href="#">Tumblr </a>
+    </div>
+  </div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+
+</html>
