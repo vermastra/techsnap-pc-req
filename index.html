@@ -29,6 +29,10 @@
     .nav-link {
       font-size: 1.2rem;
     }
+    .nav-item{
+      list-style: none;
+      margin-left: 0px;
+    }
 
     header {
       color: white;
@@ -57,8 +61,8 @@
     }
 
     .minSpecifications p {
-      margin-top: 20px;
-      margin-bottom: 20px;
+      margin-top: 5px;
+      margin-bottom: 5px;
       font-size: 17px;
     }
 
@@ -68,11 +72,12 @@
       color: rgb(190 190 194);
       padding: 2px;
       font-size: 13pt;
+
     }
 
     table {
       border-collapse: separate;
-      border-spacing: 2px 9px;
+      border-spacing: 2px 0px;
     }
 
     #firstData {
@@ -80,6 +85,7 @@
       font-size: 13pt;
       font-family: sofia-pro, sans-serif;
       color: white;
+      width: 140px;
     }
 
     p {
@@ -89,13 +95,27 @@
       color: rgb(190 190 194);
       font-size: 17px;
       letter-spacing: .015rem;
-      line-height: 1.67;
+      line-height: 1.5;
     }
 
     section {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
+    }
+
+    .p-6 {
+      padding: 1rem;
+      padding-bottom: 0px;
+      padding-top: 13px;
+    }
+
+    .mb-2 {
+      margin-bottom: .2rem !important;
+    }
+
+    section p {
+      text-align: initial;
     }
 
     .heading {
@@ -155,8 +175,8 @@
       border-radius: .5rem;
       padding-left: 20px;
       padding-right: 20px;
-      margin-right: 20px;
-      margin-left: 20px;
+      margin: 20px;
+      margin-top: 0px;
     }
 
     legend {
@@ -165,6 +185,7 @@
       float: none;
       width: auto;
       color: #26a5ff;
+      margin-bottom: 0px;
 
     }
 
@@ -181,11 +202,13 @@
       font-size: 2.3rem;
       font-weight: 500;
       color: white;
+      margin-bottom: 5px;
 
     }
 
     h1 {
-      padding: 5px;
+      padding: 4px;
+      margin-bottom: 3px;
       font-size: 1.8em;
       color: #26a5ff;
       background-color: rgb(29, 30, 31);
@@ -197,7 +220,8 @@
     .pad {
       padding: 1.5rem;
       padding-bottom: 0px;
-      width: 100%;
+      padding-top: 1rem;
+      width: 50%;
     }
 
     .mainBody {
@@ -209,74 +233,116 @@
       background-color: #131417;
       width: 65%;
       margin-right: 25px;
-      margin-left: 40px;
-      margin-top: 40px;
-      padding-bottom: 20px;
+      margin-left: 30px;
+      margin-top: 30px;
+      /* padding-bottom: 20px; */
       border-radius: 16px;
-    }
-
-    .addSection {
-      width: 35%;
-      margin-top: 40px;
-      margin-right: 13px;
     }
 
     hr {
       margin: 0px;
     }
 
+    li {
+      list-style: disc;
+      color: white;
+      margin-left: 14px;
+    }
+
+    li p {
+      position: relative;
+      left: -4px;
+    }
+
+    .addSection {
+      width: 35%;
+      margin-top: 30px;
+      margin-right: 13px;
+    }
+
+
+    .adds {
+      margin-bottom: 60px;
+    }
+
+
     .addHeading {
       font-size: 16pt;
       font-weight: 300;
       letter-spacing: .2rem;
       color: white;
+      text-transform: uppercase;
     }
 
     .add {
+      background-color: #131417;
       height: 100px;
       margin-top: 25px;
-      position:static;
-
+      display: flex;
     }
 
-    #add1 {
-      background-color: rgb(31, 30, 30);
+    .add img {
+      margin: 0px;
+      width: 100px;
+      height: 100px;
     }
 
-    #add2 {
-      background-color: rgb(80, 79, 79);
+    .add span {
+      font-size: 14pt;
+      font-weight: 600;
+      padding: 10px;
     }
 
-    #add3 {
-      background-color: rgb(139, 138, 138);
+    .addText div {
+      color: white;
+      font-size: 14pt;
+      font-weight: 600;
+      /* padding: 10px; */
+      margin-top: 25px;
     }
 
-    #add4 {
-      height: 300px;
-      background-color: rgb(238, 236, 236);
+    .lastAdd {
       position: sticky;
-      top: 0;
+      top: 25px;
     }
-    @media only screen and (min-width:1024px){
-      .pad {
-        width: 50%;
+
+
+    @media only screen and (max-width:990px) {
+
+      .mainBody {
+        flex-direction: column;
+        /* margin-top: 5px; */
+      }
+
+      .mainSection {
+        width: auto;
+        margin-right: 30px;
+      }
+
+      .addSection {
+        width: auto;
+      }
+      .adds{
+        margin-bottom: 20px;
+      }
+      .addText div{
+        margin-top: 10px;
       }
     }
+
     @media only screen and (max-width:768px) {
-     
+
+      .pad {
+        width: 100%;
+      }
 
       .author {
         font-size: 13px;
       }
 
-      .mainBody {
-        flex-direction: column;
-        margin-top: 5px;
-      }
-
       .mainSection {
         width: auto;
-        margin: 30px;
+        margin: 20px;
       }
 
       .addSection {
@@ -284,11 +350,24 @@
         margin-top: 10px;
         margin-left: 30px;
         margin-right: 30px;
+      }
 
+      .addSection img {
+        margin: auto;
+        /* margin-bottom: 20px */
+      }
+
+      .add img {
+        margin: 0px;
+      }
+      .lastAdd{
+        margin-bottom: 0px;
       }
 
       header {
         font-size: 48px;
+        line-height: 45px;
+        margin-top: 18px;
       }
 
       .minSpecifications p {
@@ -309,7 +388,7 @@
 
         margin-left: 10px;
         margin-right: 10px;
-        margin-top: 20px;
+        margin-top: 15px;
       }
 
       p {
@@ -318,6 +397,12 @@
 
       .addSection {
         margin: 10px;
+      }
+    }
+
+    @media only screen and (max-width:437px) {
+      #firstData {
+        width: 93px;
       }
     }
   </style>
@@ -360,17 +445,17 @@
       <hr style="color: white;">
       <div class="minSpecifications">
         <p>Beginners are required to have a laptop computer that meets the following minimum specifications,</p>
-        <div class="programming">
+        <div style="margin-bottom: 13px;" class="programming">
           <h1>For Programming :</h1>
           <table>
             <tr>
               <td id="firstData">Processor</td>
               <td>:&nbsp</td>
-              <td>Intel core i5 or better processor, 7th generation or newer(Virtualization must be supported)</td>
+              <td>Intel core i5 or better processor, 7th generation or newer (Virtualization must be supported)</td>
             </tr>
 
             <tr>
-              <td id="firstData">Operating System</td>
+              <td id="firstData">Operating system</td>
               <td>:</td>
               <td>Windows 10</td>
             </tr>
@@ -400,7 +485,7 @@
             </tr>
 
             <tr>
-              <td id="firstData">graphic card</td>
+              <td id="firstData">Graphic card</td>
               <td>:</td>
               <td>minimum 2GB integrated</td>
             </tr>
@@ -412,7 +497,7 @@
             </tr>
           </table>
         </div>
-        <br>
+        
 
         <div class="gaming">
           <h1>For Gaming : </h1>
@@ -459,55 +544,65 @@
             </tr>
           </table>
         </div>
+        <ul>
+          <li>
+            <p>Windows 10 is basic requirement as some applications will not be supported by lower verions.</p>
+          </li>
+          <li>
+            <p> The above given resolution is not mandatory but it is better to detect tiny errors,
+              inorder to make it more precise and to make our job easier. Whereas for gaming, it is highly
+              recommended to have better gaming experience.</p>
+          </li>
+          <li>
+            <p> Programming and Gaming requires a lot of memory because our programs use up every
+              last available megabyte while compiling. When we go for bigger projects, running programs may gets
+              slower and also to implement the codes. Most probably the gaming experience gets interrupted.
+              Therefore, we need to have larger RAM's.</p>
+          </li>
+          <li>
+            <p> You may wonder the need of webcam for programming right? Well, when we go for deep learning and
+              Artificial
+              intelligence
+              technologies, absolutely we need a webcam to detect our face or things. Nowadays it is usual that having
+              interviews,
+              meetings perhaps everything online so, there comes usage of webcam.</p>
+          </li>
+          <li>
+            <p> A graphic card is an expansion card for your PC that is responsible for rendering images to the display.
+              High-end GPU's are used for gaming, ray tracing, graphics production, and even mining cryptocurrency.
+              Hence, having a good specified graphic card is higly functional for gaming purpose.</p>
+          </li>
+          <li>
+            <p> High speed internet is very important for today's way of living. Nevertheless, what the application we
+              are
+              using will definitely needs high speed internet. However programming may not require internet but for
+              documentation
+              and syntax reference, we need internet. High speed internet help with gaming in general, but they’re not
+              the
+              be-all, end-all.
+              In fact, the routes that your game data takes from your PC to the game server and back are often more
+              important than your connection speed.</p>
+          </li>
+        </ul>
 
-        <p>Windows 10 is basic requirement as some applications will not be supported by lower verions.
-          <br>
-          The above given resolution is not mandatory but it is better to detect tiny errors,
-          inorder to make it more precise and to make our job easier. Whereas for gaming, it is highly
-          recommended to have better gaming experience.
-          <br>
-          Programming and Gaming requires a lot of memory because our programs use up every
-          last available megabyte while compiling. When we go for bigger projects, running programs may gets
-          slower and also to implement the codes. Most probably the gaming experience gets interrupted.
-          Therefore, we need to have larger RAM's.
-          <br>
-          You may wonder the need of webcam for programming right? Well, when we go for deep learning and Artificial
-          intelligence
-          technologies, absolutely we need a webcam to detect our face or things. Nowadays it is usual that having
-          interviews,
-          meetings perhaps everything online so, there comes usage of webcam.
-          <br>
-          A graphic card is an expansion card for your PC that is responsible for rendering images to the display.
-          High-end GPU's are used for gaming, ray tracing, graphics production, and even mining cryptocurrency.
-          Hence, having a good specified graphic card is higly functional for gaming purpose.
-          <br>
-          High speed internet is very important for today's way of living. Nevertheless, what the application we are
-          using will definitely needs high speed internet. However programming may not require internet but for
-          documentation
-          and syntax reference, we need internet. High speed internet help with gaming in general, but they’re not the
-          be-all, end-all.
-          In fact, the routes that your game data takes from your PC to the game server and back are often more
-          important
-          than your connection speed.
-        </p>
       </div>
 
-      <fieldset>
+      <fieldset style="margin-bottom: 10px;">
         <legend>NOTE</legend>
         <p>
           The above given are mere requirements for anybody to get started with programming and gaming.
           You can have requirements with higher specifications than mentioned above for better experience.
         </p>
       </fieldset>
-      <br>
+
 
       <div class="bestSystem">
         <h3>Best systems:</h3>
-        <br>
+
         <h1 class="programming">For Programming :</h1>
       </div>
 
-      <section style="background-color: #131417;margin-bottom: 1.5rem;"
+      <section style="background-color: #131417;margin-bottom: 18px;"
         class="text-gray-400 bg-gray-900 body-font overflow-hidden">
         <div style="padding-top: 1rem; padding-bottom: 1rem;" class="container">
           <div class="flex flex-wrap -m-4">
@@ -711,7 +806,7 @@
               </div>
             </div>
             <!-- ************************************************************************************* -->
-            <div class="pad xl:w-1/4 md:w-1/2 w-full">
+            <!-- <div class="pad xl:w-1/4 md:w-1/2 w-full">
               <div class="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden">
                 <h2 class="   border-b border-gray-800 leading-none">LG </h2>
                 <p class="flex  text-gray-400 mb-2">
@@ -775,7 +870,8 @@
                   <span class="heading">Storage : <span> 1TB SSD</span></span>
                 </p>
               </div>
-            </div>
+            </div> -->
+
             <!-- ************************************************************************************* -->
             <div class="pad xl:w-1/4 md:w-1/2 w-full">
               <div class="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden">
@@ -981,7 +1077,7 @@
       </section>
 
       <h1 class="gaming bestSystem">For Gaming :</h1>
-      <section style="background-color: #131417;margin-bottom: 1.5rem;"
+      <section style="background-color: #131417;margin-bottom: 18px;"
         class="text-gray-400 bg-gray-900 body-font overflow-hidden">
         <div style="padding-top: 1rem; padding-bottom: 1rem;" class="container ">
           <div class="flex flex-wrap -m-4">
@@ -1039,6 +1135,16 @@
                   </span>
                   <span class="heading">Screen : <span>17.3 inches, 1080p</span></span>
                 </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Storage : <span>512B SSD</span></span>
+                </p>
               </div>
             </div>
             <!-- ************************************************************************************* -->
@@ -1094,6 +1200,16 @@
                     </svg>
                   </span>
                   <span class="heading">Screen : <span>17.3 inches,1080p</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Storage : <span>2 1TB PCI m.2 SSDs</span></span>
                 </p>
               </div>
             </div>
@@ -1151,6 +1267,16 @@
                   </span>
                   <span class="heading">Screen : <span>15.6 inches, 1080p</span></span>
                 </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Storage : <span>128GB SSD</span></span>
+                </p>
               </div>
             </div>
             <!-- ************************************************************************************* -->
@@ -1206,6 +1332,16 @@
                     </svg>
                   </span>
                   <span class="heading">Screen : <span>16-inch,1600p</span></span>
+                </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Storage : <span>1TB SSD</span></span>
                 </p>
               </div>
             </div>
@@ -1263,6 +1399,16 @@
                   </span>
                   <span class="heading">Screen : <span>15.6 inch 1080p</span></span>
                 </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Storage : <span>512GB/dual 512GB NVMe PCle SSD</span></span>
+                </p>
               </div>
             </div>
             <!-- ************************************************************************************* -->
@@ -1319,6 +1465,16 @@
                   </span>
                   <span class="heading">Screen : <span>15.6-inch</span></span>
                 </p>
+                <p class="flex  text-gray-400 mb-2">
+                  <span style="margin-top: 4px;"
+                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>
+                  <span class="heading">Storage : <span>1TB HDD + 512GB SSD</span></span>
+                </p>
               </div>
             </div>
           </div>
@@ -1339,11 +1495,44 @@
     </div>
 
     <div class="addSection">
-      <div class="addHeading">WHAT'S NEW</div>
-      <div class="add" id="add1"></div>
-      <div class="add" id="add2"></div>
-      <div class="add" id="add3"></div>
-      <div class="add" id="add4"></div>
+
+      <div class="adds">
+        <img
+          src="https://tpc.googlesyndication.com/simgad/15555188718693592081?sqp=4sqPyQQ7QjkqNxABHQAAtEIgASgBMAk4A0DwkwlYAWBfcAKAAQGIAQGdAQAAgD-oAQGwAYCt4gS4AV_FAS2ynT4&rs=AOga4qmfS7hVqWSTJk_Yd01VTbY-M-9yYA"
+          alt="">
+      </div>
+
+      <div class="adds">
+        <div class="addHeading">WHAT'S NEW</div>
+        <div class="add">
+          <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210115220210/prethumb_min.png" alt="">
+          <span>Ad free experience with TechSnap Premium</span>
+        </div>
+        <div class="add">
+          <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210203145720/DSA-SP_1-min.png" alt="">
+          <span>DSA Self Placed course</span>
+        </div>
+        <div class="add">
+          <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210609101834/GC-LIve-Icon-1.png" alt="">
+          <span>Choose Best IDE for Programming</span>
+        </div>
+      </div>
+      <div class="adds">
+        <div class="addHeading">Written Work</div>
+        <div class="addText">
+          <div>Lorem, dolor consectetur adipisicing elit. Repudiandae?</div>
+          <div>Lorem amet consectetur. Tempore corporis tenetur accusantium
+            temporibus.</div>
+          <div>Lorem ipsum dolor sit ametr adipisicing elit.</div>
+          <div>Lorem ipsum dolor sit amet, consectet urelit.</div>
+        </div>
+      </div>
+      <div class="lastAdd adds">
+        <img
+          src="https://tpc.googlesyndication.com/simgad/16326905167274029106?sqp=4sqPyQQ7QjkqNxABHQAAtEIgASgBMAk4A0DwkwlYAWBfcAKAAQGIAQGdAQAAgD-oAQGwAYCt4gS4AV_FAS2ynT4&rs=AOga4qkzr_uqV4wU52rAjHMXq88Fkbfg_g"
+          alt="">
+      </div>
+
     </div>
 
   </div>
