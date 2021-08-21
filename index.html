@@ -9,13 +9,14 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./Learners.css">
   <style>
     * {
       margin: 0;
       padding: 0;
       color: #b9345a;
       box-sizing: border-box;
-      font-family: "urw-din", sans-serif;
+      font-family: 'Montserrat', sans-serif;
     }
 
     body {
@@ -29,7 +30,8 @@
     .nav-link {
       font-size: 1.2rem;
     }
-    .nav-item{
+
+    .nav-item {
       list-style: none;
       margin-left: 0px;
     }
@@ -71,7 +73,7 @@
       /* color: #989898; */
       color: rgb(190 190 194);
       padding: 2px;
-      font-size: 13pt;
+      font-size: 12.3pt;
 
     }
 
@@ -82,7 +84,7 @@
 
     #firstData {
       font-weight: 500;
-      font-size: 13pt;
+      font-size: 12.3pt;
       font-family: sofia-pro, sans-serif;
       color: white;
       width: 140px;
@@ -121,7 +123,7 @@
     .heading {
       color: white;
       font-weight: 500;
-      font-size: 13pt;
+      font-size: 12.3pt;
     }
 
     span {
@@ -129,7 +131,7 @@
       /* color: #989898; */
       color: rgb(190 190 194);
       font-weight: normal;
-      font-size: 13pt;
+      font-size: 12.3pt;
 
     }
 
@@ -145,7 +147,7 @@
     .contact {
       margin-top: 20px;
       padding-bottom: 20px;
-      font-size: 13pt;
+      font-size: 12.3pt;
       font-weight: 700;
       padding-left: 20px;
       padding-top: 10px;
@@ -180,7 +182,7 @@
     }
 
     legend {
-      font-size: 1.3em;
+      font-size: 1.25em;
       font-weight: 500;
       float: none;
       width: auto;
@@ -190,7 +192,7 @@
     }
 
     h2 {
-      font-size: 22pt;
+      font-size: 21pt;
       font-weight: 500;
       margin-bottom: .5rem;
       padding-bottom: .7rem;
@@ -199,7 +201,7 @@
     }
 
     h3 {
-      font-size: 2.3rem;
+      font-size: 2.25rem;
       font-weight: 500;
       color: white;
       margin-bottom: 5px;
@@ -209,7 +211,7 @@
     h1 {
       padding: 4px;
       margin-bottom: 3px;
-      font-size: 1.8em;
+      font-size: 1.6em;
       color: #26a5ff;
       background-color: rgb(29, 30, 31);
       font-weight: 500;
@@ -227,6 +229,8 @@
     .mainBody {
       display: flex;
       margin-bottom: 20px;
+      position: relative;
+      top: 70px;
     }
 
     .mainSection {
@@ -303,7 +307,7 @@
 
     .lastAdd {
       position: sticky;
-      top: 25px;
+      top: 97px;
     }
 
 
@@ -322,10 +326,12 @@
       .addSection {
         width: auto;
       }
-      .adds{
+
+      .adds {
         margin-bottom: 20px;
       }
-      .addText div{
+
+      .addText div {
         margin-top: 10px;
       }
     }
@@ -337,7 +343,7 @@
       }
 
       .author {
-        font-size: 13px;
+        font-size: 12px;
       }
 
       .mainSection {
@@ -360,18 +366,19 @@
       .add img {
         margin: 0px;
       }
-      .lastAdd{
+
+      .lastAdd {
         margin-bottom: 0px;
       }
 
       header {
-        font-size: 48px;
+        font-size: 42px;
         line-height: 45px;
         margin-top: 18px;
       }
 
       .minSpecifications p {
-        font-size: 13pt;
+        font-size: 12.3pt;
       }
 
       p {
@@ -392,7 +399,7 @@
       }
 
       p {
-        font-size: 13pt;
+        font-size: 12.3pt;
       }
 
       .addSection {
@@ -409,39 +416,35 @@
 </head>
 
 <body>
-  <nav class=" container-fluid navbar navbar-expand-lg navbar-dark ">
-    <div class="container ">
-      <!-- <div style="display: flex; flex-direction: row;">
-        <img style="width: 30px; height: 30px;margin-top: 5px;margin-right: 8px;"
-          src="data:image/jpeg;base64,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"
-          alt=""> -->
-      <a style="font-size: 25px;" class="navbar-brand" href="#">TechSnap</a>
-      <!-- </div> -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Programming</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">IDE</a>
-          </li>
-        </ul>
-      </div>
+  <section style="border-bottom: 1px solid black;" class="header">
+    <img id='logo' src="./assets/logo.jpg" alt="logo">
+    <div class="navItems">
+      <a href="##">About Us</a>
+      <a href="##">Our People</a>
+      <a href="##">Learn</a>
+      <button style="color: black;" class="btn">Get Started</button>
     </div>
-  </nav>
+    <div class="Ham">
+      <img style="width: 22.85px;" id="menu_img" src="./assets/menu.png" alt="Ham">
+    </div>
+  </section>
+  <!-- mobile menu --------------------------------------------- -->
+  <div class="dropMenu">
+    <ul>
+      <li><a href="##">About Us</a></li>
+      <li><a href="##">Our People</a></li>
+      <li><a href="##">Learn</a></li>
+      <button style="color: black;" class="btn">Get Started</button>
+
+    </ul>
+    <div class="Close">X</div>
+  </div>
 
   <div class="mainBody">
     <div class="mainSection">
 
       <header>PC Requirements</header>
-      <div class="author">Author : Aditya Verma &nbsp Last Updated : 30 July, 2021</div>
+      <div class="author">Author : Aditya Verma &nbsp Last Updated : 21 Aug, 2021</div>
       <hr style="color: white;">
       <div class="minSpecifications">
         <p>Beginners are required to have a laptop computer that meets the following minimum specifications,</p>
@@ -497,7 +500,7 @@
             </tr>
           </table>
         </div>
-        
+
 
         <div class="gaming">
           <h1>For Gaming : </h1>
@@ -806,73 +809,7 @@
               </div>
             </div>
             <!-- ************************************************************************************* -->
-            <!-- <div class="pad xl:w-1/4 md:w-1/2 w-full">
-              <div class="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden">
-                <h2 class="   border-b border-gray-800 leading-none">LG </h2>
-                <p class="flex  text-gray-400 mb-2">
-                  <span style="margin-top: 4px;"
-                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  <span class="heading">Model : <span>LG Gram 17</span></span>
-                </p>
-                <p class="flex  text-gray-400 mb-2">
-                  <span style="margin-top: 4px;"
-                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  <span class="heading">CPU : <span>10th-generation Intel Core i7</span></span>
-                </p>
-                <p class="flex  text-gray-400 mb-2">
-                  <span style="margin-top: 4px;"
-                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  <span class="heading items-center">Graphics : <span>Nvidia GeForce RTX 3000 Series</span></span>
-                </p>
-                <p class="flex  text-gray-400 mb-2">
-                  <span style="margin-top: 4px;"
-                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  <span class="heading">RAM : <span>Upto 64GB</span></span>
-                </p>
-                <p class="flex  text-gray-400 mb-2">
-                  <span style="margin-top: 4px;"
-                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  <span class="heading">Screen : <span>381x261x17.78mm</span></span>
-                </p>
-                <p class="flex  text-gray-400 mb-2">
-                  <span style="margin-top: 4px;"
-                    class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-gray-500 rounded-full flex-shrink-0">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                      stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                      <path d="M20 6L9 17l-5-5"></path>
-                    </svg>
-                  </span>
-                  <span class="heading">Storage : <span> 1TB SSD</span></span>
-                </p>
-              </div>
-            </div> -->
 
-            <!-- ************************************************************************************* -->
             <div class="pad xl:w-1/4 md:w-1/2 w-full">
               <div class="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden">
                 <h2 class="   border-b border-gray-800 leading-none"> Huawei</h2>
@@ -1537,21 +1474,95 @@
 
   </div>
 
-  <div class="contact">Contact us :
-    <div class="socialMedia">
-      <a href="#">Twitter</a>
-      <a href="#">Facebook</a>
-      <a href="#">Instagram</a>
-      <a href="#">Github</a>
-      <a href="#">Dribbble</a>
-      <a href="#">Tumblr </a>
+  <footer style="border-top: 1px solid black;" class="Footer_conatiner">
+    <div class="Footer_header">
+      <img src="./assets/logo.jpg" alt="Logo">
+      <br><br>
+      <p>We are here to solve your problems beacuse while pursuing your UG-CSE you might have lot many doubts
+        about trending jobs and skills required to get hired for that job, WE HELP YOU TO KNOW ABOT TRENDING
+        JOBS AND REQUIRED SKILLS</p>
+      <br>
+      <p>As well we help you to submit your projects in your degree pursuing university and we help you by free
+        tutorials in Data science,AI, ML</p>
+    </div>
+    <div class="Footer_columns_holder">
+      <div class="Footer_columns">
+        <h1>Company</h1>
+        <a href="##">About us</a>
+        <a href="##">Learner stories</a>
+        <a href="##">our people</a>
+        <a href="##">jobs</a>
+      </div>
+      <div class="Footer_columns">
+        <h1>Resources</h1>
+        <a href="##">Learn</a>
+        <a href="##">Carrer path</a>
+        <a href="##">Internship</a>
+        <a href="##">Blogs</a>
+      </div>
+      <div class="Footer_columns">
+        <h1>Support</h1>
+        <a href="##">Contact us</a>
+        <a href="##">FAQ</a>
+        <a href="##">Any ideas, DM us</a>
+        <a href="##">Doc</a>
+      </div>
+      <div class="Footer_columns">
+        <h1>Services</h1>
+        <a href="##">Startup services</a>
+        <a href="##">Design services</a>
+        <a href="##">Projects</a>
+        <a href="##">Courses</a>
+      </div>
+    </div>
+  </footer>
+  <div class="Privacy_holder">
+    <div class="Privacy_links">
+      <a href="##">Privacy policy</a>
+      <a href="##">Cookies Notice</a>
+      <a href="##">Security</a>
+      <a href="##">Terms of use</a>
+    </div>
+    <div class="Social-media">
+      <img src="./assets/twitter.svg" />
+      <img src="./assets/facebook.svg" />
+      <img src="./assets/instagram.svg" />
     </div>
   </div>
-
 </body>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-  </script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script>
+  // Animation------------------------------------
+  AOS.init({
+    duration: 900,
+    offset: 220,
+    easing: 'ease-in-out-quad'
+  });
+  //-----scroll-----------------
+  const ham = document.querySelector('.Ham');
+  const Close = document.querySelector(".Close");
+  const DropMenu = document.querySelector('.dropMenu')
+  window.addEventListener('scroll', () => {
+    const top = window.innerHeight * (10 / 100) + 300;
+    if (window.scrollY <= top) {
+      document.querySelector(".Scroll").style.display = 'none';
+
+    }
+    if (window.scrollY > top) {
+      document.querySelector(".Scroll").style.display = 'grid';
+    }
+  });
+  ham.addEventListener('click', () => {
+    DropMenu.classList.add("MenuAnimation")
+
+  })
+  Close.addEventListener('click', () => {
+    DropMenu.classList.remove('MenuAnimation')
+
+  })
+</script>
+
 
 </html>
